@@ -1,0 +1,116 @@
+
+<!-- FPAU START TRACKING GOOGLE ADS CKO -->
+{% assign fpau_send_to = 'AW-10841944177/P9ClCP-gyNIDEPHg67Eo' %}
+{% assign fpau_include_tax_and_shipping = 'no' %}
+{% if fpau_google_coding %}{% assign fpau_google_coding = true %}{%- else -%}{% assign fpau_google_coding = fpaulse
+%}{%- endif -%}
+{% if fpau_include_tax_and_shipping == 'no' %}
+{% assign fpau_checkout_price = checkout.subtotal_price | divided_by: 100.0 %}
+{%- else -%}
+{% assign fpau_checkout_price = checkout.total_price | divided_by: 100.0 %}
+{%- endif -%}
+{% assign fpau_google_ids = fpau_send_to | split: "/" %}
+{% if fpau_google_coding == fpaulse %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{fpau_google_ids[0]}}"></script>
+{%- endif -%}
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{fpau_google_ids[0]}}', { 'allow_enhanced_conversions': true });
+</script>
+{% if first_time_accessed %}
+<script>
+    gtag('event', 'conversion', {
+        'send_to': '{{ fpau_send_to }}',
+        'value': {{ fpau_checkout_price }},
+        'currency': '{{ currency }}',
+        'transaction_id': '{{ order_number }}'
+  });
+    var enhanced_conversion_data = {
+        "first_name": "{{ billing_address.first_name }}",
+        "last_name": "{{billing_address.last_name}}",
+        "home_address": {
+            "street": "{{billing_address.street}}",
+            "city": "{{billing_address.city}}",
+            "region": "{{billing_address.province}}",
+            "postal_code": "{{billing_address.zip}}",
+            "country": "{{billing_address.country_code}}"
+        }
+    };
+    if ("{{ customer.email }}") {
+        enhanced_conversion_data.email = "{{ customer.email }}";
+    }
+    if ("{{ billing_address.phone }}") {
+        enhanced_conversion_data.phone_number = "{{ billing_address.phone }}";
+    }
+</script>
+<script>
+window.dataLayer = window.dataLayer || [];
+
+window.dataLayer.push({
+
+'page_type': 'purchase',
+
+'event': 'purchase', 
+
+'transaction_id': '{{ order.name || order.order_number }}',
+
+'totalValue': {{ total_price | money_without_currency | remove:',' }}, 
+
+'subtotalValue': {{ subtotal_price | money_without_currency | remove:',' }},
+
+'tax': {{ tax_price | money_without_currency | remove:',' }},
+
+'shipping': {{ shipping_price | money_without_currency | remove:',' }},
+
+'currency': '{{ shop.currency }}',
+
+'items': [
+
+{% for line_item in line_items %}
+
+{
+
+'item_id': '{{ line_item.sku || line_item.product_id }}', 
+
+'item_name': '{{ line_item.product.title }}',
+
+'discount': {{ line_item.line_level_total_discount | money_without_currency }},
+
+'item_variant': '{{ line_item.variant.title }}',
+
+'price': {{ line_item.final_price | money_without_currency }},
+
+'quantity': {{ line_item.quantity }}
+
+},
+
+{% endfor %}
+
+]
+
+});
+
+
+</script>
+{% else %}
+<script>
+    gtag('event', 'conversion', {
+        'send_to': '{{ fpau_send_to }}',
+        'value': {{ checkout.subtotal_price | money_without_currency }},
+        'currency': '{{ currency }}',
+        'transaction_id': '{{ order.order_number  }}'
+    });
+</script>
+
+{% endif %}
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MDSH78C');</script>
+<!-- End Google Tag Manager -->
+<!-- FPAU END TRACKING GOOGLE ADS CKO -->
