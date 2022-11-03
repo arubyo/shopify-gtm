@@ -57,7 +57,7 @@
                     {
                         "type": "TEMPLATE",
                         "key": "measurementId",
-                        "value": "G-4RH5MV4ZW2"
+                        "value": "G-12312312312"
                     }
                 ],
                 "fingerprint": "1667457327108",
@@ -1111,7 +1111,7 @@
                     {
                         "type": "TEMPLATE",
                         "key": "trackingId",
-                        "value": "UA-248346241-1"
+                        "value": "UA-123123123-1"
                     }
                 ],
                 "fingerprint": "1667457271809"
