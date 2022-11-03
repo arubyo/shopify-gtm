@@ -1,6 +1,5 @@
-
 <!-- FPAU START TRACKING GOOGLE ADS CKO -->
-{% assign fpau_send_to = 'AW-XXXXXXXXXX/abcdefghijklmnop' %}
+{% assign fpau_send_to = 'AW-123123123231/abdgbesrgres' %}
 {% assign fpau_include_tax_and_shipping = 'no' %}
 {% if fpau_google_coding %}{% assign fpau_google_coding = true %}{%- else -%}{% assign fpau_google_coding = fpaulse
 %}{%- endif -%}
@@ -45,72 +44,38 @@
         enhanced_conversion_data.phone_number = "{{ billing_address.phone }}";
     }
 </script>
+    {% endif %}
 <script>
 window.dataLayer = window.dataLayer || [];
-
-window.dataLayer.push({
-
-'page_type': 'purchase',
-
-'event': 'purchase', 
-
-'transaction_id': '{{ order.name || order.order_number }}',
-
-'totalValue': {{ total_price | money_without_currency | remove:',' }}, 
-
-'subtotalValue': {{ subtotal_price | money_without_currency | remove:',' }},
-
-'tax': {{ tax_price | money_without_currency | remove:',' }},
-
-'shipping': {{ shipping_price | money_without_currency | remove:',' }},
-
-'currency': '{{ shop.currency }}',
-
-'items': [
-
-{% for line_item in line_items %}
-
-{
-
-'item_id': '{{ line_item.sku || line_item.product_id }}', 
-
-'item_name': '{{ line_item.product.title }}',
-
-'discount': {{ line_item.line_level_total_discount | money_without_currency }},
-
-'item_variant': '{{ line_item.variant.title }}',
-
-'price': {{ line_item.final_price | money_without_currency }},
-
-'quantity': {{ line_item.quantity }}
-
-},
-
-{% endfor %}
-
-]
-
+dataLayer.push({ ecommerce: null });
+{% if first_time_accessed %}
+dataLayer.push({
+  event: "purchase",
+  ecommerce: {
+      transaction_id: "{{ order.order_number }}",
+      value: {{ total_price | times: 0.01 }},
+      tax: {{ tax_price | times: 0.01 }},
+      shipping: {{ shipping_price | times: 0.01 }},
+      currency: "{{ currency }}'",
+      items: [
+       {% for line_item in line_items %}{
+        item_id: "{{ line_item.product_id }}",
+        item_name: "{{ line_item.title | remove: "'" | remove: '"' }}",
+        currency: "{{ order.currency }}",
+        price: {{ line_item.final_price | times: 0.01 }},
+        quantity: {{ line_item.quantity }}
+      },{% endfor %}
+ ]
+  }
 });
-
-
-</script>
-{% else %}
-<script>
-    gtag('event', 'conversion', {
-        'send_to': '{{ fpau_send_to }}',
-        'value': {{ checkout.subtotal_price | money_without_currency }},
-        'currency': '{{ currency }}',
-        'transaction_id': '{{ order.order_number  }}'
-    });
-</script>
-
 {% endif %}
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-XXXXXX');</script>
-<!-- End Google Tag Manager -->
+})(window,document,'script','dataLayer','GTM-XXXXXX');
+</script>
+
 <!-- FPAU END TRACKING GOOGLE ADS CKO -->
