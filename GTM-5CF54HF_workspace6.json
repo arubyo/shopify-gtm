@@ -1,22 +1,22 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2022-11-03 06:53:20",
+    "exportTime": "2022-12-14 03:49:59",
     "containerVersion": {
-        "path": "accounts/6061696057/containers/96238802/versions/0",
-        "accountId": "6061696057",
-        "containerId": "96238802",
+        "path": "accounts/6066123414/containers/98728178/versions/0",
+        "accountId": "6066123414",
+        "containerId": "98728178",
         "containerVersionId": "0",
         "container": {
-            "path": "accounts/6061696057/containers/96238802",
-            "accountId": "6061696057",
-            "containerId": "96238802",
-            "name": "pixiespix",
-            "publicId": "GTM-5CF54HF",
+            "path": "accounts/6066123414/containers/98728178",
+            "accountId": "6066123414",
+            "containerId": "98728178",
+            "name": "website.com",
+            "publicId": "GTM-T449WFM",
             "usageContext": [
                 "WEB"
             ],
-            "fingerprint": "1667456930929",
-            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6061696057/containers/96238802/workspaces?apiLink=container",
+            "fingerprint": "1670987319085",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6066123414/containers/98728178/workspaces?apiLink=container",
             "features": {
                 "supportUserPermissions": true,
                 "supportEnvironments": true,
@@ -33,85 +33,14 @@
                 "supportZones": true
             },
             "tagIds": [
-                "GTM-5CF54HF"
+                "GTM-T449WFM"
             ]
         },
         "tag": [
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "tagId": "6",
-                "name": "GA4 Configuration Tag",
-                "type": "gaawc",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "sendPageView",
-                        "value": "true"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "enableSendToServerContainer",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "measurementId",
-                        "value": "G-12312312312"
-                    }
-                ],
-                "fingerprint": "1667457327108",
-                "firingTriggerId": [
-                    "2147479553"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "tagId": "7",
-                "name": "Event - Form Sub GA4 - Tag",
-                "type": "gaawe",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "sendEcommerceData",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "eventName",
-                        "value": "generate_lead"
-                    },
-                    {
-                        "type": "TAG_REFERENCE",
-                        "key": "measurementId",
-                        "value": "GA4 Configuration Tag"
-                    }
-                ],
-                "fingerprint": "1667458208437",
-                "firingTriggerId": [
-                    "5",
-                    "33"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "tagId": "10",
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "tagId": "5",
                 "name": "Event - Phone Click UA - Tag",
                 "type": "ua",
                 "parameter": [
@@ -146,9 +75,9 @@
                         "value": "Phone Click"
                     }
                 ],
-                "fingerprint": "1667456965439",
+                "fingerprint": "1670988301150",
                 "firingTriggerId": [
-                    "8"
+                    "3"
                 ],
                 "tagFiringOption": "ONCE_PER_EVENT",
                 "monitoringMetadata": {
@@ -159,160 +88,44 @@
                 }
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "tagId": "10",
+                "name": "GA4 Configuration Tag",
+                "type": "gaawc",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendPageView",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableSendToServerContainer",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementId",
+                        "value": "G-ABCDEFHAUR"
+                    }
+                ],
+                "fingerprint": "1670988352414",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "tagId": "13",
-                "name": "Event - Phone Click GA4 - Tag",
-                "type": "gaawe",
-                "parameter": [
-                    {
-                        "type": "TEMPLATE",
-                        "key": "eventName",
-                        "value": "phone_click"
-                    },
-                    {
-                        "type": "TAG_REFERENCE",
-                        "key": "measurementId",
-                        "value": "GA4 Configuration Tag"
-                    }
-                ],
-                "fingerprint": "1667456965440",
-                "firingTriggerId": [
-                    "8"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "tagId": "19",
-                "name": "Event - Social Click GA4 - Tag",
-                "type": "gaawe",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "sendEcommerceData",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "eventName",
-                        "value": "social_click"
-                    },
-                    {
-                        "type": "TAG_REFERENCE",
-                        "key": "measurementId",
-                        "value": "GA4 Configuration Tag"
-                    }
-                ],
-                "fingerprint": "1667456965442",
-                "firingTriggerId": [
-                    "12",
-                    "4",
-                    "14",
-                    "11",
-                    "18",
-                    "17"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "tagId": "20",
-                "name": "Event - Form Sub UA - Tag",
-                "type": "ua",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "nonInteraction",
-                        "value": "false"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "overrideGaSettings",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "eventCategory",
-                        "value": "Form Submission"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "trackType",
-                        "value": "TRACK_EVENT"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "gaSettings",
-                        "value": "{{UA Const}}"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "eventAction",
-                        "value": "Submitted"
-                    }
-                ],
-                "fingerprint": "1667458217570",
-                "firingTriggerId": [
-                    "5",
-                    "33"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "tagId": "23",
-                "name": "Event - Email Click GA4 - Tag",
-                "type": "gaawe",
-                "parameter": [
-                    {
-                        "type": "TEMPLATE",
-                        "key": "eventName",
-                        "value": "email_click"
-                    },
-                    {
-                        "type": "TAG_REFERENCE",
-                        "key": "measurementId",
-                        "value": "GA4 Configuration Tag"
-                    }
-                ],
-                "fingerprint": "1667458353908",
-                "firingTriggerId": [
-                    "22"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "tagId": "27",
                 "name": "Event - Purchase GA4 - Tag",
                 "type": "gaawe",
                 "parameter": [
@@ -413,9 +226,9 @@
                         "value": "GA4 Configuration Tag"
                     }
                 ],
-                "fingerprint": "1667456965445",
+                "fingerprint": "1670988301153",
                 "firingTriggerId": [
-                    "21"
+                    "11"
                 ],
                 "tagFiringOption": "ONCE_PER_EVENT",
                 "monitoringMetadata": {
@@ -426,34 +239,53 @@
                 }
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "tagId": "28",
-                "name": "Conversion Linker Tag",
-                "type": "gclidw",
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "tagId": "20",
+                "name": "Event - Social Clicks UA - Tag",
+                "type": "ua",
                 "parameter": [
                     {
                         "type": "BOOLEAN",
-                        "key": "enableCrossDomain",
+                        "key": "nonInteraction",
                         "value": "false"
                     },
                     {
                         "type": "BOOLEAN",
-                        "key": "enableUrlPassthrough",
+                        "key": "overrideGaSettings",
                         "value": "false"
                     },
                     {
-                        "type": "BOOLEAN",
-                        "key": "enableCookieOverrides",
-                        "value": "false"
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Clicks"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{UA Const}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Social Click"
                     }
                 ],
-                "fingerprint": "1667457377424",
+                "fingerprint": "1670988301154",
                 "firingTriggerId": [
-                    "2147479553"
+                    "15",
+                    "17",
+                    "19",
+                    "18",
+                    "16",
+                    "14"
                 ],
                 "tagFiringOption": "ONCE_PER_EVENT",
-                "paused": true,
                 "monitoringMetadata": {
                     "type": "MAP"
                 },
@@ -462,9 +294,59 @@
                 }
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "tagId": "29",
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "tagId": "23",
+                "name": "Event - Form Sub UA - Tag",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Form Submission"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{UA Const}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Submitted"
+                    }
+                ],
+                "fingerprint": "1670988301155",
+                "firingTriggerId": [
+                    "22"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "tagId": "24",
                 "name": "Event - Purchase UA - Tag",
                 "type": "ua",
                 "parameter": [
@@ -509,9 +391,9 @@
                         "value": "{{currency}}"
                     }
                 ],
-                "fingerprint": "1667456965446",
+                "fingerprint": "1670988301155",
                 "firingTriggerId": [
-                    "21"
+                    "11"
                 ],
                 "tagFiringOption": "ONCE_PER_EVENT",
                 "monitoringMetadata": {
@@ -522,64 +404,9 @@
                 }
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "tagId": "30",
-                "name": "Event - Social Clicks UA - Tag",
-                "type": "ua",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "nonInteraction",
-                        "value": "false"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "overrideGaSettings",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "eventCategory",
-                        "value": "Clicks"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "trackType",
-                        "value": "TRACK_EVENT"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "gaSettings",
-                        "value": "{{UA Const}}"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "eventAction",
-                        "value": "Social Click"
-                    }
-                ],
-                "fingerprint": "1667456965446",
-                "firingTriggerId": [
-                    "4",
-                    "12",
-                    "14",
-                    "11",
-                    "17",
-                    "18"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "tagId": "31",
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "tagId": "25",
                 "name": "Event - Email Click UA - Tag",
                 "type": "ua",
                 "parameter": [
@@ -614,7 +441,172 @@
                         "value": "Email Click"
                     }
                 ],
-                "fingerprint": "1667458353909",
+                "fingerprint": "1670989779268",
+                "firingTriggerId": [
+                    "21"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "tagId": "26",
+                "name": "Event - Social Click GA4 - Tag",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "social_click"
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "GA4 Configuration Tag"
+                    }
+                ],
+                "fingerprint": "1670988301156",
+                "firingTriggerId": [
+                    "17",
+                    "15",
+                    "19",
+                    "18",
+                    "14",
+                    "16"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "tagId": "27",
+                "name": "Event - Phone Click GA4 - Tag",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "phone_click"
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "GA4 Configuration Tag"
+                    }
+                ],
+                "fingerprint": "1670988301156",
+                "firingTriggerId": [
+                    "3"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "tagId": "28",
+                "name": "Conversion Linker Tag",
+                "type": "gclidw",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCrossDomain",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableUrlPassthrough",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCookieOverrides",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1670988301156",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "tagId": "29",
+                "name": "Event - Email Click GA4 - Tag",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "email_click"
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "GA4 Configuration Tag"
+                    }
+                ],
+                "fingerprint": "1670989779266",
+                "firingTriggerId": [
+                    "21"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "tagId": "31",
+                "name": "Event - Form Sub GA4 - Tag",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "generate_lead"
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "GA4 Configuration Tag"
+                    }
+                ],
+                "fingerprint": "1670988301157",
                 "firingTriggerId": [
                     "22"
                 ],
@@ -629,74 +621,9 @@
         ],
         "trigger": [
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "triggerId": "4",
-                "name": "Instagram Trigger",
-                "type": "LINK_CLICK",
-                "filter": [
-                    {
-                        "type": "CONTAINS",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{Click URL}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "instagram"
-                            }
-                        ]
-                    }
-                ],
-                "waitForTags": {
-                    "type": "BOOLEAN",
-                    "value": "false"
-                },
-                "checkValidation": {
-                    "type": "BOOLEAN",
-                    "value": "false"
-                },
-                "waitForTagsTimeout": {
-                    "type": "TEMPLATE",
-                    "value": "2000"
-                },
-                "uniqueTriggerId": {
-                    "type": "TEMPLATE"
-                },
-                "fingerprint": "1667456965437"
-            },
-            {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "triggerId": "5",
-                "name": "Subscribe Trigger",
-                "type": "PAGEVIEW",
-                "filter": [
-                    {
-                        "type": "CONTAINS",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{Page URL}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "customer_posted=true"
-                            }
-                        ]
-                    }
-                ],
-                "fingerprint": "1667457720504"
-            },
-            {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "triggerId": "8",
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "triggerId": "3",
                 "name": "Phone Click Trigger",
                 "type": "LINK_CLICK",
                 "filter": [
@@ -731,172 +658,37 @@
                 "uniqueTriggerId": {
                     "type": "TEMPLATE"
                 },
-                "fingerprint": "1667456965439"
+                "fingerprint": "1670988301149"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "triggerId": "11",
-                "name": "TikTok Trigger",
-                "type": "LINK_CLICK",
-                "filter": [
+                "name": "Purchase Trigger",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
                     {
-                        "type": "CONTAINS",
+                        "type": "EQUALS",
                         "parameter": [
                             {
                                 "type": "TEMPLATE",
                                 "key": "arg0",
-                                "value": "{{Click URL}}"
+                                "value": "{{_event}}"
                             },
                             {
                                 "type": "TEMPLATE",
                                 "key": "arg1",
-                                "value": "tiktok"
+                                "value": "purchase"
                             }
                         ]
                     }
                 ],
-                "waitForTags": {
-                    "type": "BOOLEAN",
-                    "value": "false"
-                },
-                "checkValidation": {
-                    "type": "BOOLEAN",
-                    "value": "false"
-                },
-                "waitForTagsTimeout": {
-                    "type": "TEMPLATE",
-                    "value": "2000"
-                },
-                "uniqueTriggerId": {
-                    "type": "TEMPLATE"
-                },
-                "fingerprint": "1667456965440"
+                "fingerprint": "1670988301152"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "triggerId": "12",
-                "name": "Pinterest Trigger",
-                "type": "LINK_CLICK",
-                "filter": [
-                    {
-                        "type": "CONTAINS",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{Click URL}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "pinterest"
-                            }
-                        ]
-                    }
-                ],
-                "waitForTags": {
-                    "type": "BOOLEAN",
-                    "value": "false"
-                },
-                "checkValidation": {
-                    "type": "BOOLEAN",
-                    "value": "false"
-                },
-                "waitForTagsTimeout": {
-                    "type": "TEMPLATE",
-                    "value": "2000"
-                },
-                "uniqueTriggerId": {
-                    "type": "TEMPLATE"
-                },
-                "fingerprint": "1667456965440"
-            },
-            {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "triggerId": "14",
-                "name": "FB Trigger",
-                "type": "LINK_CLICK",
-                "filter": [
-                    {
-                        "type": "CONTAINS",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{Click URL}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "facebook"
-                            }
-                        ]
-                    }
-                ],
-                "waitForTags": {
-                    "type": "BOOLEAN",
-                    "value": "false"
-                },
-                "checkValidation": {
-                    "type": "BOOLEAN",
-                    "value": "false"
-                },
-                "waitForTagsTimeout": {
-                    "type": "TEMPLATE",
-                    "value": "2000"
-                },
-                "uniqueTriggerId": {
-                    "type": "TEMPLATE"
-                },
-                "fingerprint": "1667456965441"
-            },
-            {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "triggerId": "17",
-                "name": "Twitter Trigger",
-                "type": "LINK_CLICK",
-                "filter": [
-                    {
-                        "type": "CONTAINS",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{Click URL}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "twitter"
-                            }
-                        ]
-                    }
-                ],
-                "waitForTags": {
-                    "type": "BOOLEAN",
-                    "value": "false"
-                },
-                "checkValidation": {
-                    "type": "BOOLEAN",
-                    "value": "false"
-                },
-                "waitForTagsTimeout": {
-                    "type": "TEMPLATE",
-                    "value": "2000"
-                },
-                "uniqueTriggerId": {
-                    "type": "TEMPLATE"
-                },
-                "fingerprint": "1667456965442"
-            },
-            {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "triggerId": "18",
                 "name": "Youtube Trigger",
                 "type": "LINK_CLICK",
                 "filter": [
@@ -931,37 +723,212 @@
                 "uniqueTriggerId": {
                     "type": "TEMPLATE"
                 },
-                "fingerprint": "1667456965442"
+                "fingerprint": "1670988301153"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "triggerId": "21",
-                "name": "Purchase Trigger",
-                "type": "CUSTOM_EVENT",
-                "customEventFilter": [
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "triggerId": "15",
+                "name": "Instagram Trigger",
+                "type": "LINK_CLICK",
+                "filter": [
                     {
-                        "type": "EQUALS",
+                        "type": "CONTAINS",
                         "parameter": [
                             {
                                 "type": "TEMPLATE",
                                 "key": "arg0",
-                                "value": "{{_event}}"
+                                "value": "{{Click URL}}"
                             },
                             {
                                 "type": "TEMPLATE",
                                 "key": "arg1",
-                                "value": "purchase"
+                                "value": "instagram"
                             }
                         ]
                     }
                 ],
-                "fingerprint": "1667456965443"
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1670988301153"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "triggerId": "22",
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "triggerId": "16",
+                "name": "Twitter Trigger",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "twitter"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1670988301153"
+            },
+            {
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "triggerId": "17",
+                "name": "Pinterest Trigger",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "pinterest"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1670988301154"
+            },
+            {
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "triggerId": "18",
+                "name": "TikTok Trigger",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "tiktok"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1670988301154"
+            },
+            {
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "triggerId": "19",
+                "name": "FB Trigger",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "facebook"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1670988301154"
+            },
+            {
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "triggerId": "21",
                 "name": "Email Click Trigger",
                 "type": "LINK_CLICK",
                 "filter": [
@@ -996,13 +963,13 @@
                 "uniqueTriggerId": {
                     "type": "TEMPLATE"
                 },
-                "fingerprint": "1667456965444"
+                "fingerprint": "1670988301155"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "triggerId": "33",
-                "name": "Contact us Trigger",
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "triggerId": "22",
+                "name": "Subscribe Trigger",
                 "type": "PAGEVIEW",
                 "filter": [
                     {
@@ -1021,40 +988,14 @@
                         ]
                     }
                 ],
-                "fingerprint": "1667457829003"
+                "fingerprint": "1670988301155"
             }
         ],
         "variable": [
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "variableId": "3",
-                "name": "currency",
-                "type": "v",
-                "parameter": [
-                    {
-                        "type": "INTEGER",
-                        "key": "dataLayerVersion",
-                        "value": "2"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "setDefaultValue",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "name",
-                        "value": "ecommerce.currency"
-                    }
-                ],
-                "fingerprint": "1667458038627",
-                "formatValue": {}
-            },
-            {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "variableId": "9",
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "variableId": "4",
                 "name": "UA Const",
                 "type": "gas",
                 "parameter": [
@@ -1086,7 +1027,7 @@
                     {
                         "type": "BOOLEAN",
                         "key": "useGA4SchemaForEcommerce",
-                        "value": "false"
+                        "value": "true"
                     },
                     {
                         "type": "BOOLEAN",
@@ -1111,15 +1052,15 @@
                     {
                         "type": "TEMPLATE",
                         "key": "trackingId",
-                        "value": "UA-123123123-1"
+                        "value": "UA-1234567-1"
                     }
                 ],
-                "fingerprint": "1667457271809"
+                "fingerprint": "1670988334525"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "variableId": "15",
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "variableId": "6",
                 "name": "items",
                 "type": "v",
                 "parameter": [
@@ -1139,14 +1080,14 @@
                         "value": "ecommerce.items"
                     }
                 ],
-                "fingerprint": "1667457975535",
+                "fingerprint": "1670989627498",
                 "formatValue": {}
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "variableId": "16",
-                "name": "shipping",
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "variableId": "7",
+                "name": "currency",
                 "type": "v",
                 "parameter": [
                     {
@@ -1162,16 +1103,16 @@
                     {
                         "type": "TEMPLATE",
                         "key": "name",
-                        "value": "ecommerce.shipping"
+                        "value": "ecommerce.currency"
                     }
                 ],
-                "fingerprint": "1667458014934",
+                "fingerprint": "1670989608595",
                 "formatValue": {}
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "variableId": "24",
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "variableId": "8",
                 "name": "transaction_id",
                 "type": "v",
                 "parameter": [
@@ -1191,13 +1132,13 @@
                         "value": "ecommerce.transaction_id"
                     }
                 ],
-                "fingerprint": "1667457991573",
+                "fingerprint": "1670989651507",
                 "formatValue": {}
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "variableId": "25",
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "variableId": "9",
                 "name": "tax",
                 "type": "v",
                 "parameter": [
@@ -1214,16 +1155,16 @@
                     {
                         "type": "TEMPLATE",
                         "key": "name",
-                        "value": "ecommerce.tax"
+                        "value": "tax"
                     }
                 ],
-                "fingerprint": "1667458027957",
+                "fingerprint": "1670988301151",
                 "formatValue": {}
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
-                "variableId": "26",
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "variableId": "12",
                 "name": "totalValue",
                 "type": "v",
                 "parameter": [
@@ -1243,115 +1184,141 @@
                         "value": "ecommerce.value"
                     }
                 ],
-                "fingerprint": "1667458006366",
+                "fingerprint": "1670989644134",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6066123414",
+                "containerId": "98728178",
+                "variableId": "30",
+                "name": "shipping",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.shipping"
+                    }
+                ],
+                "fingerprint": "1670989634838",
                 "formatValue": {}
             }
         ],
         "builtInVariable": [
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "PAGE_URL",
                 "name": "Page URL"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "PAGE_HOSTNAME",
                 "name": "Page Hostname"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "PAGE_PATH",
                 "name": "Page Path"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "REFERRER",
                 "name": "Referrer"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "EVENT",
                 "name": "Event"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "CLICK_ELEMENT",
                 "name": "Click Element"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "CLICK_CLASSES",
                 "name": "Click Classes"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "CLICK_ID",
                 "name": "Click ID"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "CLICK_TARGET",
                 "name": "Click Target"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "CLICK_URL",
                 "name": "Click URL"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "CLICK_TEXT",
                 "name": "Click Text"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "FORM_ELEMENT",
                 "name": "Form Element"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "FORM_CLASSES",
                 "name": "Form Classes"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "FORM_ID",
                 "name": "Form ID"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "FORM_TARGET",
                 "name": "Form Target"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "FORM_URL",
                 "name": "Form URL"
             },
             {
-                "accountId": "6061696057",
-                "containerId": "96238802",
+                "accountId": "6066123414",
+                "containerId": "98728178",
                 "type": "FORM_TEXT",
                 "name": "Form Text"
             }
         ],
-        "fingerprint": "1667458400737",
-        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6061696057/containers/96238802/versions/0?apiLink=version"
+        "fingerprint": "1670989799855",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6066123414/containers/98728178/versions/0?apiLink=version"
     }
 }
